@@ -1,0 +1,28 @@
+{
+  "name": "test-nonce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcomontalbano/test-nonce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcomontalbano/test-nonce/issues"
+  },
+  "homepage": "https://github.com/marcomontalbano/test-nonce#readme",
+  "dependencies": {
+    "express": "~4.17.1",
+    "handlebars": "~4.5.1",
+    "helmet-csp": "~2.9.4",
+    "highlightjs": "~9.12.0",
+    "uuid": "~3.3.3"
+  }
+}
