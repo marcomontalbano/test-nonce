@@ -19,11 +19,7 @@ app.use('/nonce', require('helmet-csp')({
 
 app.get('/|/nonce', function (req, res) {
     const render = handlebars.compile(fs.readFileSync('./index.hbs', 'utf8'));
-    const jscode = highlightedCode = hljs.highlightAuto(`
-var scriptElement = document.createElement('script');
-scriptElement.innerHTML = 'alert("Hi everyone!")';
-document.body.append(scriptElement);
-    `).value;
+    const jscode = hljs.highlightAuto(fs.readFileSync('./jscode.js', 'utf8')).value;
 
     res.send(render({ nonce: res.locals.nonce, jscode }));
 })
