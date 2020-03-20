@@ -20,9 +20,9 @@
   "homepage": "https://github.com/marcomontalbano/test-nonce#readme",
   "dependencies": {
     "express": "~4.17.1",
-    "handlebars": "~4.5.1",
-    "helmet-csp": "~2.9.4",
-    "highlightjs": "~9.12.0",
-    "uuid": "~3.3.3"
+    "handlebars": "~4.7.3",
+    "helmet-csp": "~2.9.5",
+    "highlightjs": "~9.16.2",
+    "uuid": "~7.0.2"
   }
 }
