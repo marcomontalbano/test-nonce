@@ -57,7 +57,11 @@ const App: FC<Props> = ({ nonce }) => {
             </p>
 
             <div
-              style={{ "font": "16px monospace", "line-height": "1.5" }}
+              style={{
+                "font": "16px monospace",
+                "line-height": "1.5",
+                "overflow": "auto",
+              }}
               class="shj-lang-js mb-5"
               dangerouslySetInnerHTML={{ __html: jsCode }}
             />
